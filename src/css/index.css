@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.page {
+body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   padding: 0;
@@ -86,4 +86,27 @@ a:hover::after {
   transition: 0.3s ease-in;
   background-color: #fff;
   color: #2b2c5a;
+}
+
+.presentation {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.hello_title {
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+.alien_img {
+  padding-left: 18rem;
+}
+
+h1 {
+  font-size: 44px;
+  color: white;
+}
+
+span {
+  text-decoration: underline;
 }
