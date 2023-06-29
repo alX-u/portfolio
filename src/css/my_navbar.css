@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Courier Prime";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(rgba(2, 0, 36, 1), rgba(43, 44, 90, 1));
+  min-height: 100vh;
+}
+
+.myNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+}
+
+ul {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+  padding-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-size: 16px;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  background-color: #fff;
+  color: #2b2c5a;
+}
