@@ -102,6 +102,9 @@ a:hover::after {
   padding-left: 18rem;
 }
 
+img {
+  width: 450px;
+}
 h1 {
   font-size: 44px;
   color: white;
